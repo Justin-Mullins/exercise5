@@ -26,10 +26,8 @@ program that does not include any of these techniques.
 
 def pig_latin(string1):
     if string1[0] in 'aeiou':
-        string1 += 'way'
-    else:
-        string1 = string1[1:] + string1[0] + 'ay'
-    return string1
+        return string1 + 'way'
+    return string1[1:] + string1[0] + 'ay'
  
 print(pig_latin('computer')) 
 print(pig_latin('python'))
