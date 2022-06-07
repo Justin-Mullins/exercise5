@@ -25,11 +25,10 @@ program that does not include any of these techniques.
 '''
 
 def pig_latin(string1):
-    first_letter = string1[0]
-    if first_letter in ['a', 'e', 'i', 'o', 'u']:
+    if string1[0] in 'aeiou':
         string1 += 'way'
     else:
-        string1 = string1[1:] + first_letter + 'ay'
+        string1 = string1[1:] + string1[0] + 'ay'
     return string1
  
 print(pig_latin('computer')) 
